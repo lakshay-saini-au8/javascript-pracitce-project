@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": ["airbnb-base"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "linebreak-style": ["error", "windows"],
+    "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+    "no-var": "off",
+    "prefer-arrow-callback": "off",
+    "func-names": "off",
+    "no-console": "off",
+    "vars-on-top": "off",
+    "no-plusplus": "off",
+    "no-use-before-define": "off",
+    "no-alert": "off",
+    "no-restricted-syntax": "off",
+    "operator-linebreak": "off"
+  }
+}
