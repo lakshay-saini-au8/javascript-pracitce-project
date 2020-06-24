@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --home-font: 1.4rem;
+  --details-font: 1.6rem;
+  --dmb-element: hsl(209, 23%, 22%);
+  --dmvb-backgroud: hsl(207, 26%, 17%);
+  --dmw-text: hsl(0, 0%, 100%);
+  --lmvb-text: hsl(200, 15%, 8%);
+  --lmdg-input: hsl(0, 0%, 52%);
+  --lmvdg-background: hsl(0, 0%, 98%);
+  --lmw-element: hsl(0, 0%, 100%);
+  --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--dmw-text);
+  border-radius: 10px;
+  height: 70px;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+}
