@@ -254,7 +254,7 @@ const init = () => {
 // fetch the data
 const fetchPost = () => {
   return axios
-    .get(`${cors}${baseURL}/posts`)
+    .get(`${baseURL}/posts`)
     .then((data) => {
       localStorage.removeItem("postData");
       localStorage.setItem("postData", JSON.stringify(data.data));
@@ -266,7 +266,7 @@ const fetchPost = () => {
 };
 const fetchUsers = () => {
   return axios
-    .get(`${cors}${baseURL}/users`)
+    .get(`${baseURL}/users`)
     .then((data) => {
       localStorage.removeItem("userData");
       localStorage.setItem("userData", JSON.stringify(data.data));
@@ -279,7 +279,7 @@ const fetchUsers = () => {
 };
 const fetchComments = (extrapara) => {
   return axios
-    .get(`${cors}${baseURL}/posts/${extrapara}/comments`)
+    .get(`${baseURL}/posts/${extrapara}/comments`)
     .then((data) => {
       return data.data;
     })
@@ -291,7 +291,7 @@ const fetchComments = (extrapara) => {
 // fetch the data
 const fetchIndiData = (extraPara) => {
   return axios
-    .get(`${cors}${baseURL}/posts/${extraPara}`)
+    .get(`${baseURL}/posts/${extraPara}`)
     .then((data) => {
       return data.data;
     })
